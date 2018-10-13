@@ -1,0 +1,39 @@
+.card {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    box-shadow: rgba(0,0,0,.2) 5px 5px 10px;
+}
+
+html {
+    background: whitesmoke;
+}
+
+body {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}
+
+#panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background: rgba(250,250,250,.9);
+    z-index: 100;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+#panel.open {
+    width: 100%;
+    height: 80%;
+}
+
